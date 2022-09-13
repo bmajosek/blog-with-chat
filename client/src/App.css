@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    font-family: Helvetica;
+}
+p, h4, h3{
+    color: rgb(74, 74, 139);
+    margin-left: 5px;
+}
+h2{
+    font-size: 30px;
+    color: rgb(74, 74, 139);
+    margin: 5px;
+}
+input{
+    height: 30px;
+    font-size: 15px;
+    opacity: 0.75;
+}
+textarea{
+    margin: 5px;
+    font-size: 15px;
+    opacity: 0.75;
+}
+button{
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px;
+    background-color: rgb(74, 74, 139);
+    color: white;
+    margin: 15px;
+}
+.afterLog{
+    display: flex;
+    margin-left: 550px;
+    margin-top: 100px;
+}
+.User{
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 10px;
+}
+.User > p{
+    margin-left: 0px;
+}
+.User > button{
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 5px;
+}
+.ChatUI{
+    background-color: rgba(118, 118, 194, 0.548);
+    height: 700px;
+    width: 400px;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: 0;
+}
+.beforeLog{
+    background-color: rgba(118, 118, 194, 0.548);
+    height: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+.insideLog{
+    margin: 10px;
+}
+.insideLog > input, textarea, button{
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.insideLog > button{
+    width: 170px;
+}
+.Blog{
+    background-color: rgba(118, 118, 194, 0.548);
+    height: 700px;
+    width: 400px;
+    padding: 5px;
+    margin:0;
+    margin-left: 0;
+    left: 0;
+}
+.Blog > button, textarea{
+    margin-left: 5px;
+    margin-right: auto;
+}
+.Blog > textarea{
+    width: 90%;
+    height: 20%;
+}
+.UserList{
+    background-color: rgba(118, 118, 194, 0.348);
+    height: 700px;
+    width: 200px;
+    padding: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    right: 0;
+}
+.Navbar{
+    height: min-content;
+    width: 35px;
+    padding: 5px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-right: 0;
+}
+.blogScroll{
+    overflow-y: scroll;
+    height: 370px;
+}
+.Chat{
+    overflow-y: scroll;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 400px;
+    width: 350px;
+    background-color: rgba(241, 238, 238, 0.5);
+}
+.infoInputs > button{
+    margin-left: 0;
+}
+.infoInputs{
+    margin-left: 25px;
+}
+.infoInputs2{
+    margin-left: 25px;
+    width: 50%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.messInfo{
+    margin-left: 20px;
+}
+.Chat > .Send{
+    height: auto;
+    width: 100px;
+    margin-right: 5px;
+    margin-left: auto;
+}
+.Icon{
+    cursor: pointer;
+    margin: 5px;
+}
+.Icon:hover{
+    color: rgba(148, 59, 146, 0.7);
+}
+.noneError{
+    display: none;
+}
+.Chat > .Receive, .errorMsg{
+    height: auto;
+    width: 100px;
+}
+.Chat > .Send > .Message{
+    color: white;
+    background-color: rgba(148, 59, 146, 0.8);
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.Chat > .Receive > .Message{
+    color: white;
+    background-color: rgba(73, 29, 72, 0.8);
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.Chat > .errorMsg > .Message{
+    color: white;
+    background-color: red;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.Author, .Timer, .Room{
+    display: none;
+    font-size: x-small;
+    opacity: 0.85;
+    margin: 0;
+}
+.Room{
+    font-size: small;
+    opacity: 1;
+}
+.Receive:hover .Author{
+    display: block;
+}
+.Send:hover .Author{
+    display: block;
+}
+.Receive:hover .Timer{
+    display: block;
+}
+.Send:hover .Timer{
+    display: block;
+}
+.User:hover .Room{
+    display: block;
+}
+.errorMsg:hover .Author{
+    display: block;
+}
+.errorMsg:hover .Timer{
+    display: block;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(34, 74, 139);
+}
+.BlogWrite{
+  width: 70%;
+  height: 150px;
+  padding: 12px 20px;
+  margin: 3px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+.post{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 3px;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.562);
+}
